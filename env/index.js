@@ -6,6 +6,7 @@ const {getUserInfo,initializeDB,visitCounterHandler,saveToDb} = require('./helpe
 const express = require('express');
 const path = require('path');
 const app = express();
+const PORT = process.env.PORT || 5000;
 const useragent = require('express-useragent');
 const expressip = require('express-ip');
 app.use(useragent.express());
@@ -38,8 +39,8 @@ app.get('/record',(req,res)=>{
 });
 
 // starting server
-app.listen(process.env.PORT || 5000,()=>{
-    console.log(colors.fg.Green,`Server started on localhost:5000
+app.listen(PORT,()=>{
+    console.log(colors.fg.Green,`Server started on ${PORT}
     ::: Routes :::
     /       -> send the request  
     /record -> save the request             
