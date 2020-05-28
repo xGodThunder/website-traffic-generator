@@ -1,0 +1,16 @@
+html
+  head
+    title=title
+    style
+      include ui.css
+      include style.css
+  body
+    h1.align-center= 'Test Environment'
+    div.code-block
+      if info.platform
+        each value,key in info
+            h4.green= key
+            p.white= value
+      else
+       h4.green= info
+      

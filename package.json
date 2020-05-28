@@ -1,0 +1,29 @@
+{
+  "name": "website-traffic-generator",
+  "version": "1.0.0",
+  "description": "A tool which genearte fake traffic for website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "env": "node ./env/index",
+    "env:dev": "nodemon --watch ./env/ --exec node env/index.js"
+  },
+  "keywords": [
+    "website",
+    "traffic",
+    "generator"
+  ],
+  "author": "Ishu Sharma (xGodThunder)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "dependencies": {
+    "express-ip": "^1.0.4",
+    "express-useragent": "^1.0.13",
+    "lowdb": "^1.0.0",
+    "pug": "^2.0.4",
+    "ua-parser": "^0.3.5",
+    "ua-parser-js": "^0.7.21"
+  }
+}

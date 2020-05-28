@@ -1,0 +1,29 @@
+html,body{
+  
+    height: 100%;
+    background-color: slategrey;
+} 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.code-block{
+    width: 70%;
+    margin: 0 auto;
+    background-color: black;
+    border:1px solid white;
+    padding: 10px;
+}
+.green{
+    color: chartreuse;
+    opacity: 0.7;
+}
+.white{
+    color: wheat;
+
+}
