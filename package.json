@@ -5,8 +5,7 @@
   "main": "index.js",
   "entry":"./env/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "env": "node ./env/index",
+    "start": "node ./env/index",
     "env:dev": "nodemon --watch ./env/ --exec node env/index.js"
   },
   "engines": {
