@@ -38,7 +38,7 @@ app.get('/record',(req,res)=>{
 });
 
 // starting server
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log(colors.fg.Green,`Server started on localhost:5000
     ::: Routes :::
     /       -> send the request  

@@ -2,11 +2,14 @@
   "name": "website-traffic-generator",
   "version": "1.0.0",
   "description": "A tool which genearte fake traffic for website",
-  "main": "index.js",
+  "main": "./env/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "env": "node ./env/index",
     "env:dev": "nodemon --watch ./env/ --exec node env/index.js"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "keywords": [
     "website",
