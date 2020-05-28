@@ -37,12 +37,17 @@ app.get('/record',(req,res)=>{
     const flag = saveToDb(info);
     res.status(200).render('index', { title: 'Saving', info: flag ? 'succesfully stored' : 'somnething went wrong'});
 });
+app.get('/download',(req,res)=>{
+    const dbPath = path.join(__dirname+'/../'+'db.json');
+    res.status(200).download(dbPath);
+});
 
 // starting server
 app.listen(PORT,()=>{
     console.log(colors.fg.Green,`Server started on ${PORT}
     ::: Routes :::
-    /       -> send the request  
-    /record -> save the request             
+    /         -> send the request  
+    /record   -> save the request 
+    /download -> download json file           
     `,colors.Reset);
 });
